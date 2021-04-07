@@ -1,0 +1,125 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body
+{
+  background-color: #e9e9e9;
+}
+
+/*CABEÇALHO*/
+header
+{
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  height: 50px;
+  background-color: #b22618;
+  font-weight: 400;
+  font-size: 30px;
+  border-bottom: 5px #991F14 solid
+}
+
+header p
+{
+  margin-left: 40px;
+}
+
+a
+{
+  text-decoration: none;
+  color: white;
+  outline: none;
+}
+
+/*SEÇÃO GERAL*/
+body section
+{
+  margin-top: 12px;
+  margin-left: 18px; /*PROCURAR UMA FORMA DE DEIXAR AUTOMATICO*/
+  width: 97%;
+  height: 260px;
+  background-color: #cbcbcb;
+  border: 2px #bababa solid;
+  border-radius: 10px;
+}
+
+section:hover
+{
+  background-color: #a1a1a1;
+  border-color: #646464;
+}
+
+#animesDisponiveisDiv, #animesTodosDiv
+{
+  width: 100%;
+  height: 172px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#animesDisponiveisDiv img, #animesTodosDiv img
+{
+  margin-left: 6px;
+  border-radius: 6px;
+  height: 258px;
+}
+
+#animesDisponiveisDiv img:hover, #animesTodosDiv img:hover
+{
+  border: 2px solid #991F14;
+  height: 268px;
+}
+
+
+/*PLACA GERAL*/
+p.descricao{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  float: right;
+  height: 40px;
+  width: 200px;
+  background-color: #17B35C;
+  border: 1px #149950 solid;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: white;
+}
+
+p.descricao:hover, p.descricao.especial:hover
+{
+    cursor: pointer;
+}
+
+/*PLACA ANIMES DE HOJE*/
+p.descricao.especial
+{
+  justify-content: left;
+  background-color: #ffd843;
+  border-color: #ffca43;
+  background-image: url('../imagens/estrela.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+/*RODAPÉ*/
+footer p
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+  color: white;
+  margin-top: 12px;
+  background-color: #b22618;
+  border-top: 2px #991F14 solid;
+}
